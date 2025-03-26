@@ -19,13 +19,11 @@ const (
 // CreateSquidProxy is a function that will set the squid proxy configurations in the main.tf file.
 func CreateSquidProxy(file *os.File, newFile *hclwrite.File, rootBody *hclwrite.Body, terraformConfig *config.TerraformConfig,
 	rke2BastionPublicDNS, rke2ServerOnePrivateIP, rke2ServerTwoPrivateIP, rke2ServerThreePrivateIP string) (*os.File, error) {
-	userDir, err := os.UserHomeDir()
-	if err != nil {
-		return nil, err
-	}
 
-	scriptPath := filepath.Join(userDir, "go/src/github.com/rancher/tfp-automation/framework/set/resources/proxy/squid/setup.sh")
-	squidConf := filepath.Join(userDir, "go/src/github.com/rancher/tfp-automation/framework/set/resources/proxy/squid/squid.conf")
+	userDir := os.Getenv("GOROOT")
+
+	scriptPath := filepath.Join(userDir, "src/github.com/rancher/tfp-automation/framework/set/resources/proxy/squid/setup.sh")
+	squidConf := filepath.Join(userDir, "src/github.com/rancher/tfp-automation/framework/set/resources/proxy/squid/squid.conf")
 
 	scriptContent, err := os.ReadFile(scriptPath)
 	if err != nil {

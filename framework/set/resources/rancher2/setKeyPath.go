@@ -7,10 +7,7 @@ import (
 
 // SetKeyPath is a function that will set the path to the key file.
 func SetKeyPath(keyPath string) string {
-	userDir, err := os.UserHomeDir()
-	if err != nil {
-		return ""
-	}
+	userDir := os.Getenv("GOROOT")
 
 	keyPath = filepath.Join(userDir, keyPath)
 
