@@ -11,7 +11,7 @@ import (
 	"github.com/rancher/tfp-automation/defaults/keypath"
 	"github.com/rancher/tfp-automation/framework"
 	"github.com/rancher/tfp-automation/framework/set/resources/airgap/rke2"
-	"github.com/rancher/tfp-automation/framework/set/resources/aws"
+	"github.com/rancher/tfp-automation/framework/set/resources/providers/aws"
 	"github.com/rancher/tfp-automation/framework/set/resources/rancher2"
 	registry "github.com/rancher/tfp-automation/framework/set/resources/registries/createRegistry"
 	"github.com/rancher/tfp-automation/framework/set/resources/sanity"

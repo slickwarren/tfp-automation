@@ -9,7 +9,7 @@ import (
 	"github.com/rancher/tfp-automation/config"
 	"github.com/rancher/tfp-automation/framework/set/resources/airgap/rancher"
 	"github.com/rancher/tfp-automation/framework/set/resources/airgap/rke2"
-	"github.com/rancher/tfp-automation/framework/set/resources/aws"
+	"github.com/rancher/tfp-automation/framework/set/resources/providers/aws"
 	registry "github.com/rancher/tfp-automation/framework/set/resources/registries/createRegistry"
 	"github.com/rancher/tfp-automation/framework/set/resources/sanity"
 	"github.com/sirupsen/logrus"
