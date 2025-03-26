@@ -82,6 +82,11 @@ const (
 	VolumeSize               = "volume_size"
 	Timeout                  = "timeout"
 
+	SshUser                 = "ssh-user"
+	HarvesterVirtualMachine = "harvester_virtualmachine"
+	Q35MachineType          = "q35"
+	Ubuntu                  = "ubuntu"
+
 	Locals                          = "locals"
 	RoleFlags                       = "role_flags"
 	AllFlags                        = "--etcd --controlplane --worker"

@@ -7,7 +7,7 @@ import (
 	"github.com/gruntwork-io/terratest/modules/terraform"
 	"github.com/hashicorp/hcl/v2/hclwrite"
 	"github.com/rancher/tfp-automation/config"
-	"github.com/rancher/tfp-automation/framework/set/resources/aws"
+	"github.com/rancher/tfp-automation/framework/set/resources/providers/aws"
 	"github.com/rancher/tfp-automation/framework/set/resources/proxy/rancher"
 	"github.com/rancher/tfp-automation/framework/set/resources/proxy/rke2"
 	"github.com/rancher/tfp-automation/framework/set/resources/proxy/squid"
