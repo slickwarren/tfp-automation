@@ -179,6 +179,7 @@ type TerraformConfig struct {
 	NetworkPlugin                       string                       `json:"networkPlugin,omitempty" yaml:"networkPlugin,omitempty"`
 	PrivateKeyPath                      string                       `json:"privateKeyPath,omitempty" yaml:"privateKeyPath,omitempty"`
 	PrivateRegistries                   *PrivateRegistries           `json:"privateRegistries,omitempty" yaml:"privateRegistries,omitempty"`
+	Provider                            string                       `json:"provider,omitempty" yaml:"provider,omitempty"`
 	Proxy                               *Proxy                       `json:"proxy,omitempty" yaml:"proxy,omitempty"`
 	Standalone                          *Standalone                  `json:"standalone,omitempty" yaml:"standalone,omitempty"`
 	StandaloneRegistry                  *StandaloneRegistry          `json:"standaloneRegistry,omitempty" yaml:"standaloneRegistry,omitempty"`
